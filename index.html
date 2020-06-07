@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="container">
+        <h1>Tac-Tac-Toe</h1>
+        <table>
+            <tr>
+                <td class="game-board" id="square-1" data-quadrant="1"></td>
+                <td class="game-board" id="square-2" data-quadrant="2"></td>
+                <td class="game-board" id="square-3" data-quadrant="3"></td>
+            </tr>
+            <tr>
+                <td class="game-board" id="square-4" data-quadrant="4"></td>
+                <td class="game-board" id="square-5" data-quadrant="5"></td>
+                <td class="game-board" id="square-6" data-quadrant="6"></td>
+            </tr>
+            <tr>
+                <td class="game-board" id="square-7" data-quadrant="7"></td>
+                <td class="game-board" id="square-8" data-quadrant="8"></td>
+                <td class="game-board" id="square-9" data-quadrant="9"></td>
+            </tr>
+        </table>
+        <hr>
+        <div id="players">
+            <div>
+                <input type="radio" name="player" id="player-x" value="X">
+                <label for="player-x">Player-X</label>
+                <input type="radio" name="player" id="player-o" value="O">
+                <label for="player-o">Player-O</label>
+            </div>
+
+            <div>
+                <input type="radio" name="versus" id="versus-human" value="human">
+                <label for="versus-human">Human</label>
+                <input type="radio" name="versus" id="versus-machine" value="machine">
+                <label for="versus-machine">Machine</label>
+            </div>
+        </div>
+        <hr>
+        <div id="board">
+            <label for="game-board-moves">Game Board Moves</label>
+            <input type="text" name="game-board-moves" id="game-board-moves">
+            <label for="player-x-moves">Player-X Moves</label>
+            <input type="text" name="player-x-moves" id="player-x-moves">
+            <label for="player-o-moves">Player-O Moves</label>
+            <input type="text" name="player-o-moves" id="player-o-moves">
+        </div>
+        <hr>
+        <div id="log-events">
+            <label for="log">Log Events</label>
+            <div id="log"></div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
